@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lieferando</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="img/house-2-32.jpg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body onload="render()">
+  <div class="wrapper">
+  <nav class="navbar">
+    <img class="logonavbar" src="img/house-2-64.png" alt="" />
+    <span class="adressenavbar noshow400px">Maierwies, 5020 Salzburg</span>
+    <span class="adressenavbar noshow show400px">Ma...</span>
+    <div class="navbar-right">
+      <img class="austrialogo noshow730px" src="img/austria-gc215e5491_640.png" alt="" />
+      <p class="noshow show730px"id="countCart">0</p>
+      <img onclick="openPopUp()" class="cartlogo noshow show730px" src="img/shopping-bag-32.png" alt="" />
+      <img class="menu" src="img/menu-4-48.png" />
+    </div>
+  </nav>
+  
+  <div class="overlay-menu" id="overlay-menu">
+    <h4>Warenkorb</h4>
+    <div class="cartcontent" id="cartcontentoverlay">
+      <img class="shoppingbag" src="img/shopping-bag-64.png" alt="" />
+      <h4>Fülle deinen Warenkorb</h4>
+      <p>
+        Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle
+        dein Essen.
+      </p>
+    </div>
+    <div class="total">
+      <h4>Gesamtbetrag</h4>
+      <h4 id="totalsumoverlay">0.00 €</h4>
+    </div>
+    <button onclick="closePopUp()" class="close-button">Schließen</button>
+  </div>
+
+  <div class="imginimg">
+    <img class="pizza" src="img/pizza-g40f4b0aac_1920.jpg" />
+    <img class="logorestaurant" src="img/LogoRestaurant.png" alt="" />
+  </div>
+  <div class="bodymenu">
+    <h2>
+      Pizza alla Mama
+    </h2>
+    <div class="deliverytime">
+      <img src="img/time-11-16.png" alt="" />
+      <p>30-45 min</p>
+    </div>
+    <span>
+      Bei diesem Restaurant kannst du Stempel sammeln. Stelle beim
+      Bestellabschluss bitte sicher, dass du dich für unseren Newsletter
+      angemeldet hast, um deine Stempel per E-Mail zu erhalten. Ab einer
+      Bestellung von mindestens 5 Pizzen gibt es eine 1,5l Flasche Coca Cola
+      gratis! Lieferung frei Haus!
+    </span>
+    <h3>Unsere Speisen</h3>
+    <div id="content"></div>
+  </div>
+  <div class="cartcontainer noshow730px">
+    <div class="cart ">
+      <div class="cartheader">
+        <h4>Warenkorb</h4>
+      </div>
+      <div class="cartcontent" id="cartcontent">
+        <img class="shoppingbag" src="img/shopping-bag-64.png" alt="" />
+        <h4>Fülle deinen Warenkorb</h4>
+        <p>
+          Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle
+          dein Essen.
+        </p>
+      </div>
+      <div class="total">
+        <h4>Gesamtbetrag</h4>
+        <h4 id="totalsum">0.00 €</h4>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span> Alex Vermeersch </span>
+  </footer>
+</div>
+</body>
+
+</html>
